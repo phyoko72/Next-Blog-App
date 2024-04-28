@@ -1,4 +1,24 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    logging: {
+        fetches: {
+            fullUrl: true,
+        },
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "avatars.githubusercontent.com",
+                pathname: "/u/**",
+            },
+            {
+                protocol: "https",
+                hostname: "lh3.googleusercontent.com",
+                pathname: "/a/**",
+            },
+        ],
+    },
+}
 
-export default nextConfig;
+export default nextConfig

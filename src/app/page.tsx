@@ -41,7 +41,7 @@ export default async function Home({
         <main>
             <Search />
             {!posts || posts.length < 1 ? (
-                <h1 className="title">No Post to show</h1>
+                <h1 className="title text-center">No Post to show</h1>
             ) : (
                 <>
                     <div className=" h-[700px] overflow-y-auto">
